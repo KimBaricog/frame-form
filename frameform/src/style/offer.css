@@ -1,0 +1,12 @@
+.offer-box {
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  height: 20vh;
+  padding: 20px 24px 0px;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.3); /* added color with opacity */
+  border-radius: 10px;
+}
+.offer-box h4 {
+  font-size: 15px;
+  font-weight: 500;
+}

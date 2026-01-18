@@ -1,0 +1,33 @@
+.services {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
+  font-weight: 100;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-self: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.text-services {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.text-services p {
+  color: oklch(0.446 0.03 256.802);
+  font-size: 18px;
+  font-weight: 400;
+}
+.offer-container {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
