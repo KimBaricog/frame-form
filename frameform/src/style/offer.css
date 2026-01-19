@@ -1,12 +1,54 @@
 .offer-box {
   background-color: rgb(255, 255, 255);
   width: 30%;
-  height: 20vh;
-  padding: 20px 24px 0px;
+  height: 30vh;
+  padding: 0px 24px 0px;
   box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.3); /* added color with opacity */
   border-radius: 10px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.offer-box:hover {
+  transform: scale(1.1);
 }
 .offer-box h4 {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 500;
+  margin-bottom: 10px;
+}
+.icon-box img {
+  width: 50px;
+  border-radius: 50%;
+}
+.icon-box {
+  width: 25%;
+  padding: 5px 0px;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.offer-box p {
+  color: oklch(0.446 0.03 256.802);
+  font-size: 14px;
+  font-weight: 400;
+}
+.price {
+  display: flex;
+  width: 100%;
+
+  justify-content: flex-end;
+}
+.colorprice {
+  color: #425475;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom-left-radius: 15px;
+  background-color: #bed6fb;
+  padding: 10px;
 }

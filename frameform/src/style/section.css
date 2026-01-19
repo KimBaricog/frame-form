@@ -4,7 +4,7 @@
   height: 90vh;
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
   font-weight: 500;
-  font-size: 43px;
+  font-size: 42px;
   display: flex;
   align-items: center;
   justify-self: center;
@@ -57,4 +57,7 @@ h2 {
   background-color: transparent;
   color: black;
   border: solid black 1px;
+}
+#total {
+  color: black;
 }

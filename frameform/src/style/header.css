@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+  border-bottom: solid gray 1px;
 }
 .header img {
   width: 100px;
@@ -23,6 +24,10 @@
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
   font-weight: 500;
   background-color: transparent;
+}
+.landings #btn:focus {
+  border-bottom: solid black 1.5px;
+  border-radius: 0px;
 }
 .landings #btn:hover {
   color: oklch(0.546 0.245 262.881);

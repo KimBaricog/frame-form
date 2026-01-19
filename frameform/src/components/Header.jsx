@@ -8,6 +8,10 @@ function Header() {
   const main = () => {
     document.getElementById("main").scrollIntoView({ behavior: "smooth" });
   };
+
+  const recent = () => {
+    document.getElementById("recent").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <header className="header">
       <img src={Logo}></img>
@@ -18,7 +22,9 @@ function Header() {
         <button id="btn" onClick={services}>
           Services
         </button>
-        <button id="btn">Portfolio</button>
+        <button onClick={recent} id="btn">
+          Portfolio
+        </button>
         <button id="btn">Services</button>
       </div>
       <button>Get started</button>

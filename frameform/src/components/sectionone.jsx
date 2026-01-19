@@ -1,7 +1,24 @@
 import "../style/section.css";
 import Image from "../assets/laptopbg.png";
+import { useEffect, useState } from "react";
 
 function Sectionone() {
+  const start = () => {
+    document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+  };
+
+  const [number, setNumber] = useState(0);
+
+  useEffect(() => {
+    if (number >= 20) return;
+
+    const timer = setTimeout(() => {
+      setNumber((prev) => prev + 1);
+    }, 100); // speed (ms)
+
+    return () => clearTimeout(timer);
+  }, [number]);
+
   return (
     <>
       <div id="main" className="section-container">
@@ -14,7 +31,7 @@ function Sectionone() {
             </p>
           </h2>
           <div className="buttons">
-            <button>
+            <button onClick={start}>
               Get started{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +55,7 @@ function Sectionone() {
 
           <div className="record">
             <h4>
-              20+<br></br>
+              <span id="total">{number}+</span> <br></br>
               <span>
                 <p id="record-text">Projects Completed</p>
               </span>

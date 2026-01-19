@@ -27,7 +27,13 @@
 }
 .offer-container {
   width: 100%;
-  flex-direction: row;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.offer-item {
+  flex: 1 1 250px; /* fills row before wrapping */
+  max-width: 320px; /* limits how wide a card can grow */
 }
