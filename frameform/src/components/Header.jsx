@@ -25,7 +25,7 @@ function Header() {
         <button onClick={recent} id="btn">
           Portfolio
         </button>
-        <button id="btn">Services</button>
+        <button id="btn">Team</button>
       </div>
       <button>Get started</button>
     </header>
