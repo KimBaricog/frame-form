@@ -1,6 +1,7 @@
 import Sectionone from "./sectionone.jsx";
 import Services from "./Services.jsx";
 import Recent from "./recent.jsx";
+import Team from "./Team.jsx";
 import "../style/hero.css";
 
 function Hero() {
@@ -10,6 +11,7 @@ function Hero() {
         <Sectionone />
         <Services />
         <Recent />
+        <Team />
       </div>
     </div>
   );

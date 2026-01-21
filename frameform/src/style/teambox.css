@@ -1,0 +1,52 @@
+.team-box {
+  background-color: white;
+  width: 40%;
+  height: 45vh;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.3);
+  flex: 1 1 250px;
+  display: flex;
+  max-width: 275px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.team-box:hover {
+  transform: scale(1.02);
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0.5px 0.5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.img-con {
+  width: 100%;
+  height: 20vh;
+}
+.img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info-container {
+  width: 90%;
+
+  height: auto;
+  padding: 10px;
+}
+#rank {
+  color: oklch(0.546 0.245 262.881);
+  font-weight: 500;
+}
+.socials p {
+  color: oklch(0.446 0.03 256.802);
+  font-size: 14px;
+  font-weight: 400;
+}
+.socials {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.site {
+  gap: 10px;
+  display: flex;
+}

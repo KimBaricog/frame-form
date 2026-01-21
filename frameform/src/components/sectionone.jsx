@@ -26,8 +26,8 @@ function Sectionone() {
           <h2>
             Transforming Ideas Into <span>Success</span>
             <p>
-              We help students create clean, modern, and powerful presentations
-              that impress teachers and audiences.
+              Projects and ideas designed to fit your needs, created by students
+              developing their skills and experience.
             </p>
           </h2>
           <div className="buttons">

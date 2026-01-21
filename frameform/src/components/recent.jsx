@@ -1,6 +1,6 @@
 import "../style/services.css";
 import "../style/recent.css";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Example from "./example.jsx";
 import Image1 from "../assets/inter.png";
 import Image2 from "../assets/halohalo.jpg";
@@ -9,36 +9,52 @@ import Image4 from "../assets/polar.png";
 
 function Recent() {
   const scrollRef = useRef(null);
+  const itemWidth = 285; // width of one item
 
-  const scrollLeft = () => {
-    scrollRef.current.scrollBy({
-      left: -285,
-      behavior: "smooth",
-    });
-  };
+  useEffect(() => {
+    const container = scrollRef.current;
 
-  const scrollRight = () => {
-    scrollRef.current.scrollBy({
-      left: 285,
-      behavior: "smooth",
+    // Clone children for seamless looping
+    const children = Array.from(container.children);
+    children.forEach((child) => {
+      const clone = child.cloneNode(true);
+      container.appendChild(clone);
     });
-  };
+
+    let scrollIndex = 0;
+
+    const interval = setInterval(() => {
+      scrollIndex++;
+      // Scroll by one item width
+      container.scrollTo({
+        left: scrollIndex * itemWidth,
+        behavior: "smooth",
+      });
+
+      // Reset when we reach the end of original items
+      if (scrollIndex >= children.length) {
+        // Slight delay to allow smooth scroll to finish
+        setTimeout(() => {
+          container.scrollLeft = 0;
+          scrollIndex = 0;
+        }, 500); // adjust delay if needed
+      }
+    }, 2000); // scroll every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div id="recent" className="text-recent">
       <div className="text-services">
         <h2>Our Recent Works</h2>
         <p>
-          Comprehensive solutions tailored to your business needs, delivered by
-          industry experts with years of experience.
+          Creative ideas and work, developed by students learning and growing in
+          their fields.
         </p>
       </div>
 
       <section className="recent">
-        <button className="scroll-btn left" onClick={scrollLeft}>
-          ◀
-        </button>
-
         <div className="recent-container" ref={scrollRef}>
           <Example
             img={Image1}
@@ -60,10 +76,6 @@ function Recent() {
           />
           <Example img={Image4} name="Polaroid" text="Unable to download" />
         </div>
-
-        <button className="scroll-btn right" onClick={scrollRight}>
-          ▶
-        </button>
       </section>
     </div>
   );

@@ -41,8 +41,70 @@
   border: none;
   border-radius: 10px;
 }
+.hamburger {
+  width: 35px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .landings {
     display: none;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 25px; /* make it square for perfect X */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Animate into perfect X */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(0, 0);
+    position: absolute; /* center line for perfect cross */
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(0, 0);
+    position: absolute; /* center line for perfect cross */
+  }
+
+  /* Optional: mobile nav toggle */
+  .landings {
+    display: none;
+    gap: 10px;
+  }
+
+  .landings.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* adjust based on header height */
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 }

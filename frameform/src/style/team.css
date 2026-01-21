@@ -1,0 +1,19 @@
+.team-container {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
+  font-weight: 100;
+  font-size: 23px;
+}
+
+.team-members {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
