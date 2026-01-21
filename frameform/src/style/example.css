@@ -67,3 +67,12 @@ button:hover {
   background-color: oklch(49.667% 0.19226 261.518);
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .example-box {
+    margin: 0px;
+    max-width: 215px;
+  }
+  .icon-example img {
+    width: 250px;
+  }
+}

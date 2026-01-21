@@ -61,3 +61,26 @@ h2 {
 #total {
   color: black;
 }
+@media (max-width: 768px) {
+  .text p {
+    color: oklch(0.446 0.03 256.802);
+    font-size: 15px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 39px;
+    margin-bottom: 20px;
+  }
+  .text {
+    width: 100%;
+  }
+  .img-container img {
+    width: 450px;
+  }
+  .section-container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    gap: 30px;
+  }
+}

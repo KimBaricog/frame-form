@@ -12,14 +12,14 @@ function Recent() {
 
   const scrollLeft = () => {
     scrollRef.current.scrollBy({
-      left: -300,
+      left: -285,
       behavior: "smooth",
     });
   };
 
   const scrollRight = () => {
     scrollRef.current.scrollBy({
-      left: 300,
+      left: 285,
       behavior: "smooth",
     });
   };
@@ -30,8 +30,7 @@ function Recent() {
         <h2>Our Recent Works</h2>
         <p>
           Comprehensive solutions tailored to your business needs, delivered by
-          industry
-          <br /> experts with years of experience.
+          industry experts with years of experience.
         </p>
       </div>
 

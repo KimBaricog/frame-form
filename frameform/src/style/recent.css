@@ -65,3 +65,20 @@
   font-size: 18px;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .text-recent {
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .text-services {
+    width: 95%;
+    height: auto;
+  }
+  .text-services h2 {
+    font-size: 29px;
+  }
+  .recent-container {
+    width: 100%;
+  }
+}

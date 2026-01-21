@@ -52,3 +52,9 @@
   background-color: #bed6fb;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  .offer-box {
+    width: 80%;
+    height: auto;
+  }
+}
