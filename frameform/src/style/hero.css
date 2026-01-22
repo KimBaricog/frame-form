@@ -14,3 +14,9 @@
   align-items: center;
   width: 100%;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+.hero::-webkit-scrollbar {
+  display: none;
+}

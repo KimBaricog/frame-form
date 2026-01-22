@@ -8,6 +8,7 @@
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
   font-weight: 100;
   font-size: 23px;
+  margin-bottom: 20px;
 }
 
 .team-members {
@@ -16,4 +17,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .team-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-container h2 {
+    font-size: 30px;
+  }
+  .team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

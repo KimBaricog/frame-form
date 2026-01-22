@@ -19,7 +19,7 @@ function Team() {
             rank="Project Manager"
             name="Jonathan Tanyog"
             image={Tanyog}
-            info="Handles planning, deadlines, and client communication."
+            info="Handles planning, deadlines."
           />
           <Tbox
             link="https://www.facebook.com/romsciation"

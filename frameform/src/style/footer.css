@@ -1,0 +1,76 @@
+.footer {
+  background: #0f172a;
+  color: #cbd5f5;
+  margin-top: 80px;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 48px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.footer-logo {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #cbd5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.footer-icons a {
+  color: #cbd5f5;
+  transition:
+    color 0.3s,
+    transform 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
