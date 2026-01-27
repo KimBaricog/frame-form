@@ -1,0 +1,78 @@
+/* Sale container */
+.sale-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #0f172a; /* dark blue/black */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sale offer section */
+.sale-offer {
+  display: flex;
+  flex-wrap: wrap; /* allows cards to wrap on smaller screens */
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual sale card (example) */
+.sale-card {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  text-align: center;
+}
+
+.sale-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.sale-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sale-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sale-offer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sale-card {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sale-container {
+    padding: 30px 10px;
+  }
+
+  .sale-card {
+    width: 90%;
+    padding: 15px;
+  }
+}

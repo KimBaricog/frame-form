@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style/ai.css";
+import Aiimg from "../assets/ai.png";
 
 export default function FloatingChat() {
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState([
-    { from: "ai", text: "Hello! How can I help you today?" },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+
+  const handleOpen = () => {
+    setOpen((prev) => !prev);
+  };
 
   const handleSend = () => {
     if (!input.trim()) return;
-    setMessages([...messages, { from: "user", text: input }]);
+    setMessages((prev) => [...prev, { from: "user", text: input }]);
     setInput("");
 
-    // Simulate AI response
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
@@ -25,12 +27,12 @@ export default function FloatingChat() {
     }, 1000);
   };
 
-  function message1() {
-    setMessages([
-      ...messages,
-      { from: "user", text: "What's you business Description?" },
+  // Predefined messages
+  const message1 = () => {
+    setMessages((prev) => [
+      ...prev,
+      { from: "user", text: "What's your business description?" },
     ]);
-    // Simulate AI response
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
@@ -40,14 +42,13 @@ export default function FloatingChat() {
         },
       ]);
     }, 1000);
-  }
+  };
 
-  function message2() {
-    setMessages([
-      ...messages,
-      { from: "user", text: "What's you business Objective?" },
+  const message2 = () => {
+    setMessages((prev) => [
+      ...prev,
+      { from: "user", text: "What's your business objective?" },
     ]);
-    // Simulate AI response
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
@@ -57,14 +58,13 @@ export default function FloatingChat() {
         },
       ]);
     }, 1000);
-  }
+  };
 
-  function message3() {
-    setMessages([
-      ...messages,
-      { from: "user", text: "What's you business Goals?" },
+  const message3 = () => {
+    setMessages((prev) => [
+      ...prev,
+      { from: "user", text: "What are your business goals?" },
     ]);
-    // Simulate AI response
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
@@ -76,22 +76,20 @@ export default function FloatingChat() {
         },
       ]);
     }, 1000);
-  }
+  };
 
   return (
     <>
-      {/* Floating button */}
-      <div className="chat-circle" onClick={() => setOpen((prev) => !prev)}>
-        💬
+      {/* Floating AI icon */}
+      <div className="chat-circle" onClick={handleOpen}>
+        <img src={Aiimg} alt="AI Chat" />
       </div>
 
       {/* Chat box */}
       {open && (
         <div className="chat-box">
-          {/* Header */}
-          <div className="chat-header">🤖 AI Assistant</div>
+          <div className="chat-header">AI Assistant</div>
 
-          {/* Messages */}
           <div className="chat-messages">
             {messages.map((msg, idx) => (
               <div
@@ -102,12 +100,13 @@ export default function FloatingChat() {
               </div>
             ))}
           </div>
+
           <div className="set-message">
             <button onClick={message1}>Business Description</button>
             <button onClick={message2}>Business Objective</button>
             <button onClick={message3}>Business Goals</button>
           </div>
-          {/* Input */}
+
           <div className="chat-input">
             <input
               type="text"

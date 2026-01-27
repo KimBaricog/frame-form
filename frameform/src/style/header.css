@@ -108,3 +108,9 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 }
+#event {
+  background-color: #ff5722;
+}
+#event:hover {
+  background-color: #e64a19;
+}

@@ -1,6 +1,7 @@
 import Sectionone from "./sectionone.jsx";
 import Services from "./Services.jsx";
 import Recent from "./recent.jsx";
+import Sale from "./Salecontainer.jsx";
 import Ai from "./Aichat.jsx";
 
 import Team from "./Team.jsx";
@@ -14,6 +15,8 @@ function Hero() {
         <Sectionone />
         <Ai />
         <Services />
+        <Sale />
+
         <Recent />
         <Team />
         <Footer />

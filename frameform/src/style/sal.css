@@ -1,0 +1,74 @@
+/* Wrapper to stretch full width */
+.banner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: 100;
+}
+
+/* Ribbon banner */
+.ribbon-banner {
+  background-color: #e53935; /* vibrant red */
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: banner-shine 2s infinite alternate;
+}
+.ribbon-banner span {
+  color: white !important;
+}
+
+/* Ribbon tails on sides */
+.ribbon-banner::before,
+.ribbon-banner::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  border: 20px solid transparent;
+  border-top-color: #e53935;
+}
+
+.ribbon-banner::before {
+  left: -20px;
+  transform: rotate(-15deg);
+}
+
+.ribbon-banner::after {
+  right: -20px;
+  transform: rotate(15deg);
+}
+
+/* Optional shine animation */
+@keyframes banner-shine {
+  0% {
+    background-color: #e53935;
+  }
+  50% {
+    background-color: #ff5252;
+  }
+  100% {
+    background-color: #e53935;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ribbon-banner {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ribbon-banner {
+    font-size: 18px;
+  }
+}

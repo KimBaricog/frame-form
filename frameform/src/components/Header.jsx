@@ -25,6 +25,9 @@ function Header() {
   const team = () => {
     document.getElementById("team").scrollIntoView({ behavior: "smooth" });
   };
+  const sale = () => {
+    document.getElementById("salecont").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <header className="header">
       <img src={Logo} alt="Logo" />
@@ -43,6 +46,9 @@ function Header() {
           Team
         </button>
         <button onClick={start}>Get started</button>
+        <button id="event" onClick={sale}>
+          Event
+        </button>
       </div>
 
       <div
