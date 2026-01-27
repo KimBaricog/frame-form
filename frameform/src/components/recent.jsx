@@ -6,6 +6,8 @@ import Image1 from "../assets/inter.png";
 import Image2 from "../assets/halohalo.jpg";
 import Image3 from "../assets/harry.png";
 import Image4 from "../assets/polar.png";
+import Image5 from "../assets/funel.png";
+import Recent2 from "./recentsecond.jsx";
 
 function Recent() {
   const scrollRef = useRef(null);
@@ -72,6 +74,13 @@ function Recent() {
             img={Image3}
             name="Canva editing"
             link="../assets/harry.png"
+            text="Download"
+          />
+          <Example img={Image4} name="Polaroid" text="Unable to download" />
+          <Example
+            img={Image5}
+            name="Canva editing"
+            link="../assets/funel.png"
             text="Download"
           />
           <Example img={Image4} name="Polaroid" text="Unable to download" />

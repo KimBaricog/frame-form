@@ -9,7 +9,7 @@ function Example(props) {
         </div>
         <h4>{props.name}</h4>
         <p>Download to view</p>
-        <a href={props.link} download={props.link}>
+        <a download={props.link}>
           <button>{props.text}</button>
         </a>
       </div>

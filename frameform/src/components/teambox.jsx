@@ -1,4 +1,5 @@
 import "../style/teambox.css";
+import { Facebook, Twitter, Instagram, Mail, Github } from "lucide-react";
 
 import { FaFacebook, FaGithub } from "react-icons/fa";
 
@@ -12,7 +13,7 @@ function Teambox(props) {
             <div className="socials">
               <div className="site">
                 <a href={props.link}>
-                  <FaFacebook color="#1877f2" size={30}></FaFacebook>
+                  <Facebook size={20} color="black" />
                 </a>
                 <a href={props.github}>{props.socialIcon}</a>
               </div>

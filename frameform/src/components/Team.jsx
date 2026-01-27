@@ -6,7 +6,7 @@ import Romy from "../assets/romy.jpg";
 import Kim from "../assets/kim.png";
 import Sagod from "../assets/sagod.jpg";
 import Pasaporte from "../assets/pasaporte.jpg";
-import { FaGithub } from "react-icons/fa";
+import { Github } from "lucide-react";
 
 function Team() {
   return (
@@ -37,7 +37,7 @@ function Team() {
           />
           <Tbox
             github="https://github.com/KimBaricog"
-            socialIcon={<FaGithub color="#000" size={30} />}
+            socialIcon={<Github size={20} color="black" />}
             link="https://www.facebook.com/kim.baricog.2025/"
             rank="Lead developer & Designer"
             name="Kim Baricog"
