@@ -7,8 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
-  box-sizing: border-box;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -68,7 +66,7 @@
 
 @media (max-width: 480px) {
   .sale-container {
-    padding: 30px 10px;
+    padding: 30px 100px;
   }
 
   .sale-card {

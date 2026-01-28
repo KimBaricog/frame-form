@@ -12,18 +12,29 @@ export default function FloatingChat() {
   };
 
   const handleSend = () => {
+    let userInput = input.trim().toLowerCase();
     if (!input.trim()) return;
     setMessages((prev) => [...prev, { from: "user", text: input }]);
     setInput("");
 
     setTimeout(() => {
-      setMessages((prev) => [
-        ...prev,
-        {
-          from: "ai",
-          text: "Sorry! Our AI assistant doesn’t support this feature yet. We’re working on it!",
-        },
-      ]);
+      if (userInput === "hi" || userInput === "hello") {
+        setMessages((prev) => [
+          ...prev,
+          {
+            from: "ai",
+            text: "Hey there! How can I assist you with Frame & Form Designs today?",
+          },
+        ]);
+      } else {
+        setMessages((prev) => [
+          ...prev,
+          {
+            from: "ai",
+            text: "I'm sorry, I can only respond to predefined questions about Frame & Form Designs. Please use the buttons below to ask about our business description, objective, or goals.",
+          },
+        ]);
+      }
     }, 1000);
   };
 
@@ -88,7 +99,7 @@ export default function FloatingChat() {
       {/* Chat box */}
       {open && (
         <div className="chat-box">
-          <div className="chat-header">AI Assistant</div>
+          <div className="chat-header">Hey! I'm Formeth your AI assistant</div>
 
           <div className="chat-messages">
             {messages.map((msg, idx) => (
