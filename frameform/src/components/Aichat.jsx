@@ -26,6 +26,22 @@ export default function FloatingChat() {
             text: "Hey there! How can I assist you with Frame & Form Designs today?",
           },
         ]);
+      } else if (userInput === "bayot si rolly?") {
+        setMessages((prev) => [
+          ...prev,
+          {
+            from: "ai",
+            text: "Yes, Rolly is indeed a bayot! How can I help you further?",
+          },
+        ]);
+      } else if (userInput === "gwapo si kim?") {
+        setMessages((prev) => [
+          ...prev,
+          {
+            from: "ai",
+            text: "Yes, Kim is indeed a gwapo and also cute! ",
+          },
+        ]);
       } else {
         setMessages((prev) => [
           ...prev,
