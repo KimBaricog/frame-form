@@ -109,7 +109,10 @@ export default function FloatingChat() {
     <>
       {/* Floating AI icon */}
       <div className="chat-circle" onClick={handleOpen}>
-        <img src={Aiimg} alt="AI Chat" />
+        <img
+          src="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865312/ai_zqoucz.png"
+          alt="AI Chat"
+        />
       </div>
 
       {/* Chat box */}

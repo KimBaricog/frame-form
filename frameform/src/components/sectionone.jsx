@@ -75,7 +75,7 @@ function Sectionone() {
           </div>
         </div>
         <div className="img-container">
-          <img src={Image}></img>
+          <img src="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865316/laptopbg_pytumh.png"></img>
         </div>
       </div>
     </>

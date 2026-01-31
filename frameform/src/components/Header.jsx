@@ -30,7 +30,10 @@ function Header() {
   };
   return (
     <header className="header">
-      <img src={Logo} alt="Logo" />
+      <img
+        src="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865307/logo_znkns7.png"
+        alt="Logo"
+      />
 
       <div className={`landings ${active ? "show" : ""}`}>
         <button id="btn" onClick={main}>

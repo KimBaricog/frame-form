@@ -20,31 +20,31 @@ function Services() {
           <Offer
             price="35 - 70₱"
             text="Clean, professional, and visually engaging slides."
-            imge={Ppt}
+            imge="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865307/powerpoint_qnd8t7.jpg"
             name="Presentation Design"
           ></Offer>
           <Offer
             price="25 - 35₱"
             text="Flyers, Pamphlet, Resumes, and many more."
-            imge={Canva}
+            imge="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865312/canva_xiujma.png"
             name="Canva editing"
           ></Offer>
           <Offer
             price="4 - 5₱"
             text="High-quality printing for all your needs-fast, affordable, and crisp results every time"
-            imge={Printing}
+            imge="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865308/printing_knfp97.jpg"
             name="Printing"
           ></Offer>
           <Offer
             price="10 - 20₱"
             text="Capture memories instantly with our vibrant and fun Polaroid prints"
-            imge={Polaroid}
+            imge="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865308/polaroid_gdo3v6.png"
             name="Polaroid"
           ></Offer>
           <Offer
             price="30 - 50₱"
             text="Accurate and fast encoding for research papers, documents."
-            imge={Encoding}
+            imge="https://res.cloudinary.com/dgwmeeszw/image/upload/v1769865312/encoding_sv2iws.jpg"
             name="Encoding"
           ></Offer>
         </div>
