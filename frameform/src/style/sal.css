@@ -1,6 +1,6 @@
 /* Wrapper to stretch full width */
 .banner-wrapper {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -65,10 +65,16 @@
   .ribbon-banner {
     font-size: 22px;
   }
+  .banner-wrapper {
+    width: 85%;
+  }
 }
 
 @media (max-width: 480px) {
   .ribbon-banner {
     font-size: 18px;
+  }
+  .banner-wrapper {
+    width: 85%;
   }
 }
