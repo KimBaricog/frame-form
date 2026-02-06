@@ -21,7 +21,7 @@ function Salecontainer() {
         </div>
       </div>
       <Snowfall
-        color="pink"
+        color="white"
         snowflakeCount={100} // number of snowflakes
         radius={[1, 5]} // min & max size
         speed={[0.5, 2]} // min & max falling speed
