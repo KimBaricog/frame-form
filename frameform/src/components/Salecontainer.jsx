@@ -20,6 +20,7 @@ function Salecontainer() {
           <Sale_offer img={Encoding} text="Encoding" />
         </div>
       </div>
+
       <Snowfall
         color="white"
         snowflakeCount={100} // number of snowflakes

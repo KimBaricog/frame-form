@@ -15,7 +15,6 @@ function Hero() {
         <Sectionone />
         <Ai />
         <Services />
-        <Sale />
 
         <Recent />
         <Team />
