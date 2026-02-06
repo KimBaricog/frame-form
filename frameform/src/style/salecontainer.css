@@ -9,6 +9,7 @@
   justify-content: center;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: solid white;
 }
 
 /* Sale offer section */
@@ -66,7 +67,8 @@
 
 @media (max-width: 480px) {
   .sale-container {
-    padding: 30px 100px;
+    padding: 30px 0px;
+    max-width: 100%;
   }
 
   .sale-card {
