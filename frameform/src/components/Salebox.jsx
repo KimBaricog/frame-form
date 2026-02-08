@@ -6,7 +6,7 @@ const Salebox = () => {
     <>
       <div className="banner-wrapper">
         <div className="ribbon-banner">
-          <span>Foundation Day Sale!!!</span>
+          <span>Polaroid design sale 20% off</span>
         </div>
       </div>
     </>

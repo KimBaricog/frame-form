@@ -56,4 +56,7 @@
     width: 80%;
     height: auto;
   }
+  .offer-box:hover {
+    transform: none;
+  }
 }
