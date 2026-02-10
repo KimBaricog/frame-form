@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../style/ai.css";
-import Aiimg from "../assets/ai.png";
 
 export default function FloatingChat() {
   const [open, setOpen] = useState(false);
@@ -14,6 +13,7 @@ export default function FloatingChat() {
   const handleSend = () => {
     let userInput = input.trim().toLowerCase();
     if (!input.trim()) return;
+
     setMessages((prev) => [...prev, { from: "user", text: input }]);
     setInput("");
 
@@ -39,7 +39,16 @@ export default function FloatingChat() {
           ...prev,
           {
             from: "ai",
-            text: "Yes, Kim is indeed a gwapo and also cute! ",
+            text: "Yes, Kim is indeed a gwapo and also cute!",
+          },
+        ]);
+      } else if (userInput === "rolly321") {
+        setMessages((prev) => [
+          ...prev,
+          {
+            from: "ai",
+            __html:
+              '<img src="https://res.cloudinary.com/dgwmeeszw/image/upload/v1770698203/c6b3851f-298e-43ec-b163-884d00b0011a_xihvzu.jpg" />',
           },
         ]);
       } else {
@@ -125,6 +134,9 @@ export default function FloatingChat() {
               <div
                 key={idx}
                 className={`message ${msg.from === "ai" ? "ai" : "user"}`}
+                {...(msg.__html
+                  ? { dangerouslySetInnerHTML: { __html: msg.__html } }
+                  : {})}
               >
                 {msg.text}
               </div>

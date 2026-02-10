@@ -150,6 +150,9 @@
 .set-message button:hover {
   transform: scale(1.05);
 }
+.chat-messages img {
+  width: 200px;
+}
 
 /* Animation */
 @keyframes fadeInUp {
