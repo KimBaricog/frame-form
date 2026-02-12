@@ -51,6 +51,15 @@ export default function FloatingChat() {
               '<img src="https://res.cloudinary.com/dgwmeeszw/image/upload/v1770698203/c6b3851f-298e-43ec-b163-884d00b0011a_xihvzu.jpg" />',
           },
         ]);
+      } else if (userInput === "code123") {
+        setMessages((prev) => [
+          ...prev,
+          {
+            from: "ai",
+            __html:
+              '<img src="https://res.cloudinary.com/dgwmeeszw/image/upload/v1770867385/Screenshot_2025-11-25_181935_ed6s9h.png" />',
+          },
+        ]);
       } else {
         setMessages((prev) => [
           ...prev,
