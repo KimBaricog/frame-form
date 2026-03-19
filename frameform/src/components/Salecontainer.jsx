@@ -26,8 +26,7 @@ function Salecontainer() {
       defref.current.style.display = "flex";
       changetext("view less");
     }
-  };
-
+  }
   return (
     <>
       <div id="salecont" className="sale-container">
